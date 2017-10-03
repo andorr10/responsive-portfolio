@@ -1,0 +1,618 @@
+/* This CSS will us em instead of px */
+
+
+
+html, body{
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.1250em;
+  line-height: 2.125em;
+  color: #777;
+  background: url("../photos/concrete_seamless.png");
+  display: flex;
+  flex-direction: column;
+}
+
+.content{
+  flex: 1 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 60em;
+  margin: 0 auto;
+  clear: both;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 1.25em;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  color: #4aaaa5;
+}
+
+h1 {
+  padding-bottom: 1.25em;
+  font-size: 1.875em;
+  line-height: 0.19140625em;
+  border-bottom: .1875em solid #ddd;
+}
+
+h2,
+h3 {
+  font-size: 1.375em;
+}
+
+
+
+#masthead {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin: 0 0 1.875em;
+  overflow: auto;
+  color: #fff;
+  background: #fff;
+  border-bottom: .125em solid #ccc;
+}
+
+#logo {
+  float: left;
+  width: 10.625em;
+  height: 2.5em;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1.875em;
+  font-weight: 700;
+  line-height: 2.5em;
+  margin: .25em 0;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
+}
+
+nav {
+  float: right;
+  margin-top: 1.5625em;
+}
+
+nav a {
+  display: inline-block;
+  padding-left: 0.9375em;
+  margin-left: 0.9375em;
+  line-height: 1.125em;
+  color: #999;
+  text-decoration: none;
+  border-left: 0.0625em solid #efefef;
+}
+
+nav a:first-child {
+  border-left: 0 none;
+}
+
+
+
+footer {
+  padding: 1.875em 0;
+  clear: both;
+  font-size: .75em;
+  color: #fff;
+  color: #ccc;
+  text-align: center;
+  background: #666;
+  border-top: .5em solid #4aaaa5;
+
+}
+
+
+
+.sidebar {
+  float: right;
+  width: 100%;
+  max-width: 16.875em;
+  padding: 1.875em;
+  margin-bottom: 1.25em;
+  background: #fff;
+  border: 0.0625em solid #ddd;
+}
+
+h3,
+.sidebar h2 {
+  padding-bottom: 1.25em;
+  margin-bottom: 0.9375em;
+  line-height: 1.375em;
+  border-bottom: .125em solid #eee;
+}
+
+.social {
+  width: 3.875em;
+  height: 3.875em;
+  margin-top: .5;
+  margin-right: 0.3125em;
+}
+
+.social:last-child {
+  margin-right: 0;
+}
+
+
+
+#main-container {
+  padding-top: 12.125em;
+}
+
+.main-section {
+  float: left;
+  width: 100%;
+  max-width: 40.625em;
+  padding: 1.875em;
+  margin: 0 0 2.5em;
+  background: #fff;
+  border: 0.0625em solid #ddd;
+}
+
+
+.work {
+  position: relative;
+  float: left;
+  width: 17.125em;
+  margin: 21.25em 0 1.5625em;
+  overflow: auto;
+}
+
+.work:nth-child(even) {
+  margin-right: 2.5em;
+}
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 1.25em;
+  width: 100%;
+  padding: 0.9375em;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 1.875em;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+.auth-image {
+  float: left;
+  width: 12.5em;
+  height: auto;
+  margin-top: 0.625em;
+  margin-right: 1.5625em;
+}
+
+
+
+#contact-form ul {
+  margin-bottom: 1.25em;
+}
+
+#contact-form li {
+  margin-bottom: 0.625em;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 2.1875em;
+  padding: 0.625em;
+  font-size: 0.875em;
+  border: 0.0625em solid #ddd;
+}
+
+textarea {
+  height: 12.5em;
+}
+
+input[type=submit] {
+  padding: 0.625em 14.875em;
+  font-size: 1.125em;
+  color: #fff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
+}
+
+
+
+/*______________________________________________________________*/
+
+
+/*
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  color: #777;
+  background: url("../photos/concrete_seamless.png");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 20px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  color: #4aaaa5;
+}
+
+h1 {
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 49px;
+  border-bottom: 3px solid #ddd;
+}
+
+h2,
+h3 {
+  font-size: 22px;
+}
+
+
+
+#masthead {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin: 0 0 30px;
+  overflow: auto;
+  color: #fff;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+}
+
+#logo {
+  float: left;
+  width: 250px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
+}
+
+nav {
+  float: right;
+  margin-top: 25px;
+}
+
+nav a {
+  display: inline-block;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color: #999;
+  text-decoration: none;
+  border-left: 1px solid #efefef;
+}
+
+nav a:first-child {
+  border-left: 0 none;
+}
+
+
+
+footer {
+  padding: 30px 0;
+  clear: both;
+  font-size: 12px;
+  color: #fff;
+  color: #ccc;
+  text-align: center;
+  background: #666;
+  border-top: 8px solid #4aaaa5;
+}
+
+
+
+.sidebar {
+  float: right;
+  width: 100%;
+  max-width: 270px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+h3,
+.sidebar h2 {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  border-bottom: 2px solid #eee;
+}
+
+.social {
+  width: 62px;
+  height: 62px;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.social:last-child {
+  margin-right: 0;
+}
+
+
+
+#main-container {
+  padding-top: 130px;
+}
+
+.main-section {
+  float: left;
+  width: 100%;
+  max-width: 650px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+
+
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+.auth-image {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
+
+
+#contact-form ul {
+  margin-bottom: 20px;
+}
+
+#contact-form li {
+  margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
+}
+
+
+
+
+
+
+
+
+/*klsdglkfsnlkgdnlksdnglksdjglksndglknsd
+slkdgnjlksdnglksdnglksdnglknslkdgnlksdnfglksndj
+slkdnglskdnglksdnglksdnglksdnglknsdlknsdlkng*/
+
+
+/* media querie css below*/
+
+
+@media screen and (max-width: 980px) {
+  body {
+    background-color: #333;
+  }
+
+  .container {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+.main-section{
+  width: 65%;
+}
+.auth-image{
+    position: relative;
+    width: 100%;
+
+}
+
+/*  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}*/
+
+/* Additional Screen Sizes */
+
+/* Width at 768px and below */
+
+
+@media screen and (max-width: 768px) {
+    background-color: #333;
+  }
+
+  .container {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+.container {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+.main-section{
+  width: 100%;
+}
+
+  
+
+
+
+/*  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}
+*/
+/* Width at 640px and below */
+@media screen and (max-width: 640px) {
+  body {
+    background-color: #333;
+  }
+
+
+
+  .container {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+  .auth-image{
+    position: relative;
+    width: 100%;
+  }
+  .sidebar{
+    max-width: 46em;
+  }
+  
+  #conect{
+    margin: 0 auto;
+  }
+ /*  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}*/
+
+
+
